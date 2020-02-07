@@ -6,6 +6,17 @@ var safemode=0;
 bot.login(process.env.token);
 
 bot.on("message",function(message){
+
+bot.channels.get("648490031815589888").send("**[Bot startup in progress]**");
+bot.channels.get("648490031815589888").send("Waking up myself...............**[OK]**");
+bot.channels.get("648490031815589888").send("Escaping weebs and furries.....**[OK]**");    
+bot.channels.get("648490031815589888").send("Entering shelter...............**[OK]**");    
+bot.channels.get("648490031815589888").send("**[Bot startup successful]**");
+    
+bot.channels.get("648490031815589888").send("**[===invalid-user8910 v1.1 by invalid-user#8910===]**");
+bot.channels.get("648490031815589888").send("**[Basement now open for messages; join the party!]**");
+    
+    
 if(message.channel.type==="dm" && safemode==0)
 {
 id=id+1;
@@ -14,28 +25,41 @@ bot.channels.get("648490031815589888").send("𝗔𝗻𝗼𝗻𝘆𝗺𝗼𝘂�
 }
 if(message.content==='+sssx'){
     safemode=1;
-    bot.channels.get("648490031815589888").send("[Admin/Mod disabled the chat]");
-    //bot.channels.get("648490031815589888").send("[Bot under maintainence]");
+    bot.channels.get("648490031815589888").send("**[Admin/Mod disabled the chat]**");
 }
 if(message.content==='+ssso'){
     //login
     bot.login(process.env.token);
-    bot.channels.get("648490031815589888").send("[Admin/Mod enabled the chat]"); //
+    bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat]**"); //
     safemode=0;
 }
 if(message.content==='+sssr'){
 id=0;
-bot.channels.get("648490031815589888").send("[Admin/Mod reset the IDs]");
+bot.channels.get("648490031815589888").send("**[Admin/Mod reset the IDs]**");
 }
 if(message.content==='+ssss'){
 resetBot();
 }
+if(message.content==='+sssm'){
+safemode=1;
+bot.channels.get("648490031815589888").send("**[Admin/Mod disabled the chat; Bot under maintenance]**");
+}    
     
 function resetBot(){
-bot.channels.get("647122545086169115").send("Bot resetting");
+bot.channels.get("648490031815589888").send("**[/!\Bot is resetting/!\]**");
 bot.destroy();
 bot.login(process.env.token);
-bot.channels.get("647122545086169115").send("Reset successful");
+bot.channels.get("648490031815589888").send("**[Reset successful]**");
+bot.channels.get("648490031815589888").send("**[Bot startup in progress]**");
+bot.channels.get("648490031815589888").send("Waking up myself...............**[OK]**");
+bot.channels.get("648490031815589888").send("Escaping weebs and furries.....**[OK]**");    
+bot.channels.get("648490031815589888").send("Entering shelter...............**[OK]**");    
+bot.channels.get("648490031815589888").send("**[Bot startup successful]**");
+    
+bot.channels.get("648490031815589888").send("**[===invalid-user8910 v1.1 by invalid-user#8910===]**");
+bot.channels.get("648490031815589888").send("**[Basement now open for messages; join the party!]**");    
+id=0;
+safemode=0;    
 }    
     
     
