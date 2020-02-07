@@ -10,7 +10,7 @@ bot.on("message",function(message){
 if(message.channel.type==="dm" && safemode==0)
 {
 id=id+1;
-bot.channels.get("674977831587020810").send("Message: "+message.content+"\nAuthor: "+message.author+" ID: "+id); //logs channel
+bot.channels.get("674977831587020810").send("Message: ||"+message.content+"||\nAuthor: ||"+message.author+"|| ID: "+id); //logs channel
 bot.channels.get("648490031815589888").send("𝗔𝗻𝗼𝗻𝘆𝗺𝗼𝘂𝘀: `"+message.content+"`\nID: `"+id+"`");
 }
 if(message.content==='+sssx'){
@@ -35,8 +35,13 @@ safemode=0;
 if(message.content==='+sssm'){
 safemode=1;
 bot.channels.get("648490031815589888").send("**[Admin/Mod disabled the chat; Bot under maintenance]**");
-}    
-    
+}
+if(message.content==='+sssmo'){
+safemode=0;
+bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat; Maintenance over]**");
+}  
+
+  
 function resetBot(){
 bot.channels.get("648490031815589888").send("**[Bot is resetting]**");
 bot.destroy();
