@@ -3,7 +3,7 @@ const bot=new Discord.Client();
 var id=0;
 var safemode=0;
 //login
-bot.login(process.env.token);
+bot.login(process.env.token)
 
 .then(bot.user.setPresence({game:{name:"We're poor little souls, who have lost all control, and we're forced to take that role",type:0}}));
 
