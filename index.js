@@ -3,12 +3,9 @@ const bot=new Discord.Client();
 var id=0;
 var safemode=0;
 //login
-bot.login(process.env.token);
+bot.login(process.env.token)
 
-
-bot.user.setPresence({game: { name: "We're poor little souls, who have lost all control, and we're forced to take that role" }, status:'online'})
-.then(console.log)
-.catch(console.error);
+.then(bot.user.setPresence({game: { name: "We're poor little souls, who have lost all control, and we're forced to take that role" }, status:'online'}));
 
 bot.on("message",function(message){
  
