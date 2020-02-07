@@ -29,6 +29,7 @@ bot.channels.get("648490031815589888").send("**[Admin/Mod reset the IDs]**");
 }
 if(message.content==='+ssss'){
 resetBot();
+break;  
 }
 if(message.content==='+sssm'){
 safemode=1;
@@ -50,7 +51,6 @@ bot.channels.get("648490031815589888").send("**[===invalid-user8910 v1.1 by inva
 bot.channels.get("648490031815589888").send("**[Basement now open for messages; join the party!]**");    
 id=0;
 safemode=0;    
-break;
 }    
     
     
