@@ -15,6 +15,7 @@ bot.channels.get("648490031815589888").send("𝗔𝗻𝗼𝗻𝘆𝗺𝗼𝘂�
 if(message.content==='+sssx'){
     safemode=1;
     bot.channels.get("648490031815589888").send("[Admin/Mod disabled the chat]");
+    bot.channels.get("648490031815589888").send("[Bot under maintainence]");
 }
 if(message.content==='+ssso'){
     //login
