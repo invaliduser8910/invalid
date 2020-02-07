@@ -29,7 +29,6 @@ bot.channels.get("648490031815589888").send("[Admin/Mod reset the IDs]");
 }
 if(message.content==='+ssss'){
 resetBot();
-break;
 }
     
 function resetBot(){
