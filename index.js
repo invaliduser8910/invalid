@@ -5,9 +5,7 @@ var safemode=0;
 //login
 bot.login(process.env.token);
 
-async function createstatus(){
-await bot.user.setPresence({game:{name:"We're poor little souls, who have lost all control, and we're forced to take that role",type:0}});
-};
+.then(bot.user.setPresence({game:{name:"We're poor little souls, who have lost all control, and we're forced to take that role",type:0}}));
 
 createstatus();
 
