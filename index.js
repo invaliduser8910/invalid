@@ -5,8 +5,9 @@ var safemode=0;
 //login
 bot.login(process.env.token);
 
+bot.on('ready',function(evt){
 bot.setPresence({game:{name:"We're poor little souls, who have lost all control, and we're forced to take that role",type:0}});
-
+}); 
 
 bot.on("message",function(message){
  
