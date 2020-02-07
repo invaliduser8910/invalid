@@ -10,12 +10,12 @@ if(message.channel.type==="dm" && safemode==0)
 {
 id=id+1;
 bot.channels.get("674977831587020810").send("Message: "+message.content+"\nAuthor: "+message.author+" ID: "+id); //logs channel
-bot.channels.get("648490031815589888").send("𝗔𝗻𝗼𝗻𝘆𝗺𝗼𝘂𝘀: "+message.content+"\nID: `"+id+"`");
+bot.channels.get("648490031815589888").send("𝗔𝗻𝗼𝗻𝘆𝗺𝗼𝘂𝘀: `"+message.content+"`\nID: `"+id+"`");
 }
 if(message.content==='+sssx'){
     safemode=1;
     bot.channels.get("648490031815589888").send("[Admin/Mod disabled the chat]");
-    bot.channels.get("648490031815589888").send("[Bot under maintainence]");
+    //bot.channels.get("648490031815589888").send("[Bot under maintainence]");
 }
 if(message.content==='+ssso'){
     //login
@@ -27,5 +27,18 @@ if(message.content==='+sssr'){
 id=0;
 bot.channels.get("648490031815589888").send("[Admin/Mod reset the IDs]");
 }
+if(message.content==='+ssss'){
+resetBot();
+break;
+}
+    
+function resetBot(){
+bot.channels.get("647122545086169115").send("Bot resetting");
+bot.destroy();
+bot.login(process.env.token);
+bot.channels.get("647122545086169115").send("Reset successful");
+}    
+    
+    
 }
 );
