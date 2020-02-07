@@ -5,12 +5,15 @@ var safemode=0;
 //login
 bot.login(process.env.token);
 
-bot.on('ready', () => {
+//bot.on('ready', () => {
 bot.user.setStatus("We're poor little souls, who have lost all control, and we're forced to take that role"); 
-}
-);       
+//}
+//);       
 
 bot.on("message",function(message){
+ 
+ bot.user.setStatus("We're poor little souls, who have lost all control, and we're forced to take that role"); 
+
  if(message.channel.type==="dm" && safemode==0)
 {
 id=id+1;
