@@ -5,7 +5,6 @@ var safemode=0;
 //login
 bot.login(process.env.token);
 
-//.then(bot.user.setStatus("We're poor little souls, who have lost all control, and we're forced to take that role"));
 
 //bot.user.setStatus("We're poor little souls, who have lost all control, and we're forced to take that role"); 
 //}
@@ -13,8 +12,6 @@ bot.login(process.env.token);
 
 bot.on("message",function(message){
  
- bot.user.setStatus("We're poor little souls, who have lost all control, and we're forced to take that role"); 
-
  if(message.channel.type==="dm" && safemode==0)
 {
 id=id+1;
