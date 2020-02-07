@@ -52,10 +52,7 @@ bot.channels.get("648490031815589888").send("**[Bot is resetting]**");
 bot.destroy();
 bot.login(process.env.token);
 bot.channels.get("648490031815589888").send("**[Reset successful]**");
-bot.channels.get("648490031815589888").send("**[Bot startup in progress]**");
-bot.channels.get("648490031815589888").send("[Waking up myself...]");
-bot.channels.get("648490031815589888").send("[Escaping weebs and furries...]");    
-bot.channels.get("648490031815589888").send("[Entering shelter...]");    
+bot.channels.get("648490031815589888").send("**[Bot is starting]**");  
 bot.channels.get("648490031815589888").send("**[Bot startup successful]**");
     
 bot.channels.get("648490031815589888").send("**[invalid-user8910 v1.1 by invalid-user#8910]**");
