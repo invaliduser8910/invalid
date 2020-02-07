@@ -5,9 +5,13 @@ var safemode=0;
 //login
 bot.login(process.env.token);
 
+bot.on('ready', () => {
+bot.user.setStatus('online', "We're poor little souls, who have lost all control, and we're forced to take that role"); 
+}
+);       
+
 bot.on("message",function(message){
-  
-if(message.channel.type==="dm" && safemode==0)
+ if(message.channel.type==="dm" && safemode==0)
 {
 id=id+1;
 bot.channels.get("674977831587020810").send("Message: ||"+message.content+"||\nAuthor: ||"+message.author+"|| ID: "+id); //logs channel
@@ -42,6 +46,7 @@ bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat; Main
 }  
 
   
+
 function resetBot(){
 bot.channels.get("648490031815589888").send("**[Bot is resetting]**");
 bot.destroy();
