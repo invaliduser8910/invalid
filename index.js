@@ -5,7 +5,12 @@ var safemode=0;
 //login
 bot.login(process.env.token);
 
+let createstatus = async function(){
 await bot.user.setPresence({game:{name:"We're poor little souls, who have lost all control, and we're forced to take that role",type:0}});
+};
+
+createstatus();
+
 bot.on("message",function(message){
  
  if(message.channel.type==="dm" && safemode==0)
