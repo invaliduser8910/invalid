@@ -6,9 +6,9 @@ var safemode=0;
 bot.login(process.env.token);
 
 
-//bot.user.setStatus("We're poor little souls, who have lost all control, and we're forced to take that role"); 
-//}
-//);       
+bot.user.setPresence({game: { name: "We're poor little souls, who have lost all control, and we're forced to take that role" }, status:'online'})
+.then(console.log)
+.catch(console.error);
 
 bot.on("message",function(message){
  
