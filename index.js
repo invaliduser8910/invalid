@@ -58,7 +58,7 @@ bot.channels.get("648490031815589888").send("**[Bot startup successful]**");
     
 bot.channels.get("648490031815589888").send("**[invalid-user8910 v1.1 by invalid-user#8910]**");
 bot.channels.get("648490031815589888").send("**[Basement now open for messages]**");      
-bot.channels.get("674977831587020810").send("**[ID got reset]**);
+bot.channels.get("674977831587020810").send("**[ID got reset"]**);
 }    
     
     
