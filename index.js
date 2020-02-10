@@ -49,8 +49,8 @@ bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat; Main
  const [command, ...args] = message.content.split(" ");
 
   switch(command){
-    case "!Command":
-       message.channel.send('Command + ' + args.join(" "));
+    case "friend calc":
+       message.channel.send(args[1]+args[2]);
     break;
     //....
   }
