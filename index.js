@@ -76,18 +76,7 @@ function isNumeric(num){
 } 
  ///////////
  
- if(command=="rps"&&args.length==1){
-  var eslot1; var eslot2; var eslot3;
-  eslot1=":fist:"; eslot2=":hand_splayed:"; eslot3=":v:";
-  var rpshuman=args[1];
-  if(rpshuman=="r"||"p"||"s"){var rpsbot=Math.floor(Math.random() * 3);} else {return;}
-if (rpshuman=="r") rpshuman=0;  if (rpshuman=="p") rpshuman=1;  if (rpshuman=="s") rpshuman=2; 
- if(rpsbot==rpshuman){if(rpshuman==0) message.channel.send(":robot::fist::fist::sunglasses: `**TIE!!!**`");
-  if(rpshuman==1) message.channel.send(":robot::hand_splayed::hand_splayed::sunglasses: `**TIE!!!**`");
-     if(rpshuman==2) message.channel.send(":robot::v::v::sunglasses: `**TIE!!!**`");}
-   if(rpshuman||rpsbot!=0){if (rpshuman=2) {message.channel.send("win "+rpsbot+" "+rpshuman);} else {message.channel.send("lose "+rpsbot+" "+rpshuman); }
- if(rpshuman=0) {message.channel.send("win");} else {message.channel.send("lose "+rpsbot+" "+rpshuman); }
-                              }
+ 
  
  
  
