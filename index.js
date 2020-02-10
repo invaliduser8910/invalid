@@ -50,9 +50,9 @@ bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat; Main
   const args = message.content.slice(pref.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   if (command==="calc")
-  var n1=args[0];
-  var n2=args[1];
-	message.channel.send(n1&&n2);
+  var n1=args[1];
+  var n2=args[2];	
+  message.channel.send(n1+n2);
  
 function resetBot(){
 bot.channels.get("648490031815589888").send("**[Bot is resetting]**");
