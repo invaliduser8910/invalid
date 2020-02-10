@@ -45,8 +45,9 @@ if(message.content==='+sssmo'){
 safemode=0;
 bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat; Maintenance over]**");
 }  
-if(message.content[0]==="frnd" && message.content[1]==="calc"){
-bot.channels.get("647122545086169115").send("pass"); 
+if(message.content[0]==="calc"){
+let command = message.content.substring(message.content.indexOf(" ") + 1, message.content.length);
+bot.channels.get("647122545086169115").send(command); 
 }  
 
 function resetBot(){
