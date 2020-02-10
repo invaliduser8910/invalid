@@ -46,7 +46,7 @@ safemode=0;
 bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat; Maintenance over]**");
 }  
 if(message.content[0]==="frnd" && message.content[1]==="calc"){
-bot.channels.get("647122545086169115").send(message.content[2]&&" "&&message.content[3]); 
+bot.channels.get("647122545086169115").send("pass"); 
 }  
 
 function resetBot(){
