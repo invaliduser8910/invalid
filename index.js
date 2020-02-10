@@ -46,9 +46,10 @@ safemode=0;
 bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat; Maintenance over]**");
 }  
 
+const prefix="frnd";	
 const args = message.content.slice(prefix.length).split(' ');
 const command = args.shift().toLowerCase();	
-if (!message.content.startsWith("frnd")) return;
+if (!message.content.startsWith(prefix)) return;
 else if (command === 'calc') {
 	if (!args.length) {
 		return message.channel.send(`Ok here: `);
