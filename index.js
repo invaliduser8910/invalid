@@ -46,14 +46,7 @@ safemode=0;
 bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat; Maintenance over]**");
 }  
 
-  var pref="frnd";	
-  const args = message.content.slice(pref.length).trim().split(/ +/g);
-  const command = args.shift().toLowerCase();
-  if (command==="calc")
-  var n1=parseInt(args[0],10);
-  var n2=parseInt(args[1],10);
-  n3=n1+n2;
-  message.channel.send(n3.tostring());
+
  
  
 function resetBot(){
