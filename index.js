@@ -58,13 +58,15 @@ const args = message.content.slice(pref.length).trim().split(/ +/g);
   var n2=parseInt(args[1],10);
    if (isNumeric(n1)==true && isNumeric(n2)==true)
                          { 
-  if (n1 || n2<100000000 || n1||n2>-100000000){                        
+                      
  var n3=n1+n2;
+ if n3>999999999 return;                          
  var n4=n1-n2;
+ if n4<-999999999 return;                         
  var n5=n1*n2;
  var n6=n1/n2;
  var n7=n1%n2;                         
-message.channel.send("Hmm lets see...\n> "+n1+"+"+n2+"="+n3+"\n> "+n1+"-"+n2+"="+n4+"\n> "+n1+"*"+n2+"="+n5+"\n> "+n1+"/"+n2+"="+n6+"\n> "+n1+"%"+n2+"="+n7);    }}                }
+message.channel.send("Hmm lets see...\n> "+n1+"+"+n2+"="+n3+"\n> "+n1+"-"+n2+"="+n4+"\n> "+n1+"*"+n2+"="+n5+"\n> "+n1+"/"+n2+"="+n6+"\n> "+n1+"%"+n2+"="+n7);    }                }
 else return;
 
 function isNumeric(num){
