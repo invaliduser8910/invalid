@@ -49,7 +49,7 @@ bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat; Main
    if (message.content.indexOf(pref) !== 0) return;
 const args = message.content.slice(pref.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
-  if (pref="frnd" command==="calc")
+  if (command==="calc")
   var n1=parseInt(args[0],10);
   var n2=parseInt(args[1],10);
   n3=n1+n2;
