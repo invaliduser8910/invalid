@@ -58,7 +58,7 @@ const args = message.content.slice(pref.length).trim().split(/ +/g);
   var n2=parseInt(args[1],10);
    if (isNumeric(n1)==true && isNumeric(n2)==true)
                          { 
-  if (n1 || n2<100000000) && (n1||n2>-100000000){                        
+  if (n1 || n2<100000000) & (n1||n2>-100000000){                        
  var n3=n1+n2;
  var n4=n1-n2;
  var n5=n1*n2;
