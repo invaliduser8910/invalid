@@ -60,9 +60,9 @@ const args = message.content.slice(pref.length).trim().split(/ +/g);
                          { 
                       
  var n3=n1+n2;
- if n3>999999999 return;                          
+ if (n3>999999999) return;                          
  var n4=n1-n2;
- if n4<-999999999 return;                         
+ if (n4<-999999999) return;                         
  var n5=n1*n2;
  var n6=n1/n2;
  var n7=n1%n2;                         
