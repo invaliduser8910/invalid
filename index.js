@@ -52,10 +52,14 @@ const args = message.content.slice(pref.length).trim().split(/ +/g);
   if (command==="calc")
   var n1=parseInt(args[0],10);
   var n2=parseInt(args[1],10);
-  n3=n1+n2;
-  message.channel.send(n3.tostring());
+let  n3=n1+n2;
+var n3=n3;
+ message.channel.send(n3);
 
- 
+
+function isNumeric(num){
+  return !isNaN(num)
+} 
  
 function resetBot(){
 bot.channels.get("648490031815589888").send("**[Bot is resetting]**");
