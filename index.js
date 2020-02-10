@@ -46,7 +46,7 @@ safemode=0;
 bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat; Maintenance over]**");
 }  
  
-  var pref="frnd";	
+  var pref="Frnd";	
    if (message.content.indexOf(pref) !== 0) return;
 const args = message.content.slice(pref.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
@@ -56,7 +56,11 @@ const args = message.content.slice(pref.length).trim().split(/ +/g);
    if (isNumeric(n1)==true && isNumeric(n2)==true)
                          { 
  var n3=n1+n2;
-message.channel.send(n3);}                }
+ var n4=n1-n2;
+ var n5=n1*n2;
+ var n6=n1/n2;
+ var n7=n1%n2;                         
+message.channel.send(n3+" "+n4+" "+n5+" "+n6+" "+n7);}                }
 else return;
 
 function isNumeric(num){
