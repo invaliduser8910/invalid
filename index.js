@@ -54,7 +54,7 @@ const args = message.content.slice(pref.length).trim().split(/ +/g);
   var n2=parseInt(args[1],10);
  var n3=n1+n2;
 message.channel.send(n3);
-
+else return;
 
 function isNumeric(num){
   return !isNaN(num)
