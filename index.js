@@ -49,11 +49,11 @@ bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat; Main
    if (message.content.indexOf(pref) !== 0) return;
 const args = message.content.slice(pref.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
-  if (command==="calc" && args.length==2)
+  if (command==="calc" && args.length==2){
   var n1=parseInt(args[0],10);
   var n2=parseInt(args[1],10);
  var n3=n1+n2;
-message.channel.send(n3);
+message.channel.send(n3);}
 else return;
 
 function isNumeric(num){
