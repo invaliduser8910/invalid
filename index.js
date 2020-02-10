@@ -45,6 +45,7 @@ if(message.content==='+sssmo'){
 safemode=0;
 bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat; Maintenance over]**");
 }  
+ 
   var pref="frnd";	
    if (message.content.indexOf(pref) !== 0) return;
 const args = message.content.slice(pref.length).trim().split(/ +/g);
@@ -52,9 +53,11 @@ const args = message.content.slice(pref.length).trim().split(/ +/g);
   if (command==="calc" && args.length==2){
   var n1=parseInt(args[0],10);
   var n2=parseInt(args[1],10);
+   if (isnumeric(n1)==true && isnumeric(n2)==true)
+                         { 
  var n3=n1+n2;
-message.channel.send(n3);}
-else return;
+message.channel.send(n3);}                }
+else message.channel.send("frnd correct syntax is `frnd calc [number 1] [number 2]`");
 
 function isNumeric(num){
   return !isNaN(num)
