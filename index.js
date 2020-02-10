@@ -45,8 +45,11 @@ if(message.content==='+sssmo'){
 safemode=0;
 bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat; Maintenance over]**");
 }  
+ if(message.content==='#help'){
+message.channel.send("**Calculator:**\n`#calc [first number] [second number]`");
+} 
  
-  var pref="Frnd";	
+  var pref="#";	
    if (message.content.indexOf(pref) !== 0) return;
 const args = message.content.slice(pref.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
