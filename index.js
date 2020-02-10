@@ -45,10 +45,15 @@ if(message.content==='+sssmo'){
 safemode=0;
 bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat; Maintenance over]**");
 }  
-if(message.content[0]==="calc"){
-let command = message.content.substring(message.content.indexOf(" ") + 1, message.content.length);
-bot.channels.get("647122545086169115").send(command); 
-}  
+  
+ const [command, ...args] = message.content.split(" ");
+
+  switch(command){
+    case "!Command":
+       message.channel.send('Command + ' + args.join(" "));
+    break;
+    //....
+  }
 
 function resetBot(){
 bot.channels.get("648490031815589888").send("**[Bot is resetting]**");
