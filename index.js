@@ -46,17 +46,13 @@ safemode=0;
 bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat; Maintenance over]**");
 }  
 
-const prefix="frnd";	
-const args = message.content.slice(prefix.length).split(' ');
-const command = args.shift().toLowerCase();	
-if (!message.content.startsWith(prefix)) return;
-else if (command === 'calc') {
-	if (!args.length) {
-		return message.channel.send(`Ok here: `);
-	}
-
-	message.channel.send(`Command name: ${command}\nArguments: ${args}`);
-}
+  var pref="frnd";	
+  const args = message.content.slice(pref.length).trim().split(/ +/g);
+  const command = args.shift().toLowerCase();
+  if (command==="calc")
+  let n1=args[0];
+let	n2=args[1];
+	message.channel.send(n1&&n2);
  
 function resetBot(){
 bot.channels.get("648490031815589888").send("**[Bot is resetting]**");
