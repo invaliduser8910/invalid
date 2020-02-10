@@ -53,7 +53,7 @@ bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat; Main
   var n1=parseInt(args[0],10);
   var n2=parseInt(args[1],10);
   n3=n1+n2;
-  message.channel.send(n3);
+  message.channel.send(n3.tostring());
  
  
 function resetBot(){
