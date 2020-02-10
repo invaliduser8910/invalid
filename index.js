@@ -57,7 +57,7 @@ const args = message.content.slice(pref.length).trim().split(/ +/g);
                          { 
  var n3=n1+n2;
 message.channel.send(n3);}                }
-else {message.channel.send("frnd correct syntax is `frnd calc [number 1] [number 2]`");}
+else return;
 
 function isNumeric(num){
   return !isNaN(num)
