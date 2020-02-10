@@ -53,7 +53,7 @@ const args = message.content.slice(pref.length).trim().split(/ +/g);
   if (command==="calc" && args.length==2){
   var n1=parseInt(args[0],10);
   var n2=parseInt(args[1],10);
-   if (isnumeric(n1)==true && isnumeric(n2)==true)
+   if (isNumeric(n1)==true && isNumeric(n2)==true)
                          { 
  var n3=n1+n2;
 message.channel.send(n3);}                }
