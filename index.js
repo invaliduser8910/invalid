@@ -68,19 +68,16 @@ const args = message.content.slice(pref.length).trim().split(/ +/g);
  var n5=n1*n2;
  var n6=n1/n2;
  var n7=n1%n2;                         
-message.channel.send("Hmm lets see...\n> "+n1+"+"+n2+"="+n3+"\n> "+n1+"-"+n2+"="+n4+"\n> "+n1+"*"+n2+"="+n5+"\n> "+n1+"/"+n2+"="+n6+"\n> "+n1+"%"+n2+"="+n7);      console.log("success");
+message.channel.send("Hmm lets see...\n> "+n1+"+"+n2+"="+n3+"\n> "+n1+"-"+n2+"="+n4+"\n> "+n1+"*"+n2+"="+n5+"\n> "+n1+"/"+n2+"="+n6+"\n> "+n1+"%"+n2+"="+n7);      
   }                }
 else return;
 
-function isNumeric(num){
-  return !isNaN(num)
-} 
- 
- ///////////
+///////////
  
  var rpsh;var rpsb;
    if (command==="rps"){
 
+    console.log("success");
   rpsh=args[0];
     
     if(rpsh!=="r"||"p"||"s") { return; } else
@@ -115,7 +112,16 @@ if (rpsh=="r") rpsh=0; if (rpsh=="p") rpsh=1; if (rpsh=="s") rpsh=2;
    }
     
  
- ////////////
+ //////////// 
+ 
+ 
+ 
+ 
+function isNumeric(num){
+  return !isNaN(num)
+} 
+ 
+ 
  
 function resetBot(){
 bot.channels.get("648490031815589888").send("**[Bot is resetting]**");
