@@ -85,6 +85,7 @@ function isNumeric(num){
     if(rpsh!=="r"||"p"||"s") { return; } else
     
     {
+     console.log("success");
     rpsb=Math.floor(Math.random() * 3);     
 if (rpsh=="r") rpsh=0; if (rpsh=="p") rpsh=1; if (rpsh=="s") rpsh=2;
     if (rpsb=="r") rpsb=0; if(rpsb=="p") rpsb=1; if(rpsb=="s") rpsb=2;
