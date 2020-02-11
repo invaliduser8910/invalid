@@ -46,7 +46,7 @@ safemode=0;
 bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat; Maintenance over]**");
 }  
  if(message.content==='#help'){
-message.channel.send("**Calculator:**\n`#calc [first number] [second number]`");
+message.channel.send("**Calculator:**\n`#calc [first number] [second number]`\n**Rock paper scissors:**\n`#rps [r OR p OR s]`");
 } 
  
  //////////
