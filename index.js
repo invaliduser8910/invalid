@@ -46,7 +46,7 @@ safemode=0;
 bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat; Maintenance over]**");
 }  
  if(message.content==='#help'){
-message.channel.send("**Calculator:**\n`#calc [first number] [second number]`\n**Rock paper scissors:**\n`#rps [r OR p OR s]`");
+message.channel.send(":sunglasses:**invalid-user8910 v1.3 by invalid-user#8910**:sunglasses:\n\n**Calculator:**\n`#calc [first number] [second number]`\n**Rock paper scissors:**\n`#rps [r OR p OR s]`");
 } 
  
  //////////
@@ -127,7 +127,7 @@ bot.login(process.env.token);
 bot.channels.get("648490031815589888").send("**[Reset successful]**");
 bot.channels.get("648490031815589888").send("**[Bot is starting]**");  
 bot.channels.get("648490031815589888").send("**[Bot startup successful]**"); 
-bot.channels.get("648490031815589888").send("**[invalid-user8910 v1.1 by invalid-user#8910]**");
+bot.channels.get("648490031815589888").send("**[invalid-user8910 v1.3 by invalid-user#8910]**");
 bot.channels.get("648490031815589888").send("**[Basement now open for messages]**");      
 bot.channels.get("674977831587020810").send("**[ID got reset]**");
 }    
