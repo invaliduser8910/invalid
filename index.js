@@ -87,7 +87,7 @@ message.channel.send("index 0");
 message.channel.send("value r|p|s");     
     rpsb=Math.floor(Math.random() * 3);     
 if (rpsh=="r") rpsh=0; if (rpsh=="p") rpsh=1; if (rpsh=="s") rpsh=2;
-    if (rpsb=="r") rpsb=0; if(rpsb=="p") rpsb=1; if(rpsb=="s") rpsb=2;
+    if (rpsb=="0") rpsb=0; if(rpsb=="1") rpsb=1; if(rpsb=="2") rpsb=2;
      if (rpsh==rpsb)
       
      {
@@ -108,7 +108,7 @@ if (rpsh=="r") rpsh=0; if (rpsh=="p") rpsh=1; if (rpsh=="s") rpsh=2;
       if(rpsh==2&&rpsb==1) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::v::hand_splayed::sunglasses::volcano:");}
       }             
                     
-    } else {message.channel.send("value not rps");}
+    } else {return;}
     
      
    }else {return;}
