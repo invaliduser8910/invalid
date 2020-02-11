@@ -80,12 +80,13 @@ function isNumeric(num){
  var rpsh;var rpsb;
    if (command==="rps" && args.length==1){
 
- var rpsh=args[0];
+    console.log("success");
+  rpsh=args[0];
     
     if(rpsh!=="r"||"p"||"s") { return; } else
     
     {
-     console.log("success");
+     
     rpsb=Math.floor(Math.random() * 3);     
 if (rpsh=="r") rpsh=0; if (rpsh=="p") rpsh=1; if (rpsh=="s") rpsh=2;
     if (rpsb=="r") rpsb=0; if(rpsb=="p") rpsb=1; if(rpsb=="s") rpsb=2;
