@@ -74,11 +74,12 @@ message.channel.send("Hmm lets see...\n> "+n1+"+"+n2+"="+n3+"\n> "+n1+"-"+n2+"="
 else if (command==="rps" && args.length==0){
 
   rpsh=args[0];
-message.channel.send("index 0");    
+message.channel.send("index 0");  
+ console.log("index 0");
     if(rpsh=="r"||"p"||"s") 
     
     {
-     
+     console.log("value r/p/s");
 message.channel.send("value r|p|s");     
     rpsb=Math.floor(Math.random() * 3);     
 if (rpsh=="r") rpsh=0; if (rpsh=="p") rpsh=1; if (rpsh=="s") rpsh=2;
