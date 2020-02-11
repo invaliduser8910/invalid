@@ -52,7 +52,7 @@ message.channel.send("**Calculator:**\n`#calc [first number] [second number]`");
  //////////
  
   var pref="#";	
-   if (message.content.indexOf(pref) !== 0) return;
+   //if (message.content.indexOf(pref) !== 0) return;
 const args = message.content.slice(pref.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   if (command==="calc" && args.length==2){
