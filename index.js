@@ -80,7 +80,7 @@ else if (command==="rps" && args.length==1){
  message.channel.send(rpsh);
 message.channel.send("index 0");  
  console.log("index 0");
-    if(rpsh=="r"||"p"||"s") 
+    if(rpsh==="r"||"p"||"s") 
     
     {
      console.log("value r/p/s");
