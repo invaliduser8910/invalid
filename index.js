@@ -108,7 +108,7 @@ if (rpsh=="r") rpsh=0; if (rpsh=="p") rpsh=1; if (rpsh=="s") rpsh=2;
       if(rpsh==2&&rpsb==1) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::v::hand_splayed::sunglasses::volcano:");}
       }             
                     
-    } else {return;}
+    } else {message.channel.send("value not rps");}
     
      
    }else {return;}
