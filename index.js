@@ -51,10 +51,13 @@ message.channel.send("**Calculator:**\n`#calc [first number] [second number]`");
  
  //////////
  
+ 
+ 
  var rpsh; var rpsb;
   var pref="#";	
    if (message.content.indexOf(pref) !== 0) return;
 const args = message.content.slice(pref.length).trim().split(/ +/g);
+ console.log(args);
   const command = args.shift().toLowerCase();
   if (command==="calc" && args.length==2){
   var n1=parseInt(args[0],10);
