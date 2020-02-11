@@ -73,6 +73,7 @@ message.channel.send("Hmm lets see...\n> "+n1+"+"+n2+"="+n3+"\n> "+n1+"-"+n2+"="
 else {return;}
 
 ///////////
+ console.log(args);
  
  var rpsh;var rpsb;
     if (message.content.indexOf(pref) !== 0) return;
