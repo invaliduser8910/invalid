@@ -71,9 +71,8 @@ const args = message.content.slice(pref.length).trim().split(/ +/g);
  var n7=n1%n2;                         
 message.channel.send("Hmm lets see...\n> "+n1+"+"+n2+"="+n3+"\n> "+n1+"-"+n2+"="+n4+"\n> "+n1+"*"+n2+"="+n5+"\n> "+n1+"/"+n2+"="+n6+"\n> "+n1+"%"+n2+"="+n7);      
   }                }
-else if (command==="rps"){
+else if (command==="rps" && args.length==0){
 
-    console.log("success");
   rpsh=args[0];
     
     if(rpsh=="r"||"p"||"s") 
