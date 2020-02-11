@@ -75,6 +75,7 @@ else return;
 ///////////
  
  var rpsh;var rpsb;
+    if (message.content.indexOf(pref) !== 0) return;
    if (command==="rps"){
 
     console.log("success");
@@ -107,7 +108,7 @@ if (rpsh=="r") rpsh=0; if (rpsh=="p") rpsh=1; if (rpsh=="s") rpsh=2;
       if(rpsh==2&&rpsb==1) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::v::hand_splayed::sunglasses::volcano:");}
       }              
                     
-    } else { console.log("works"); return;}
+    } else {return;}
     
      
    }
