@@ -78,7 +78,7 @@ function isNumeric(num){
  ///////////
  
  var rpsh;var rpsb;
-   if (command==="rps" && args.length==1){
+   if (command==="rps"){
 
     console.log("success");
   rpsh=args[0];
