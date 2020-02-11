@@ -57,8 +57,7 @@ message.channel.send("**Calculator:**\n`#calc [first number] [second number]`");
   var pref="#";	
    if (message.content.indexOf(pref) !== 0) return;
 const args = message.content.slice(pref.length).trim().split(/ +/g);
- console.log(args);
-  const command = args.shift().toLowerCase();
+ const command = args.shift().toLowerCase();
   if (command==="calc" && args.length==2){
   var n1=parseInt(args[0],10);
   var n2=parseInt(args[1],10);
@@ -77,41 +76,37 @@ message.channel.send("Hmm lets see...\n> "+n1+"+"+n2+"="+n3+"\n> "+n1+"-"+n2+"="
 else if (command==="rps" && args.length==1){
 
   rpsh=args[0];
- message.channel.send(rpsh);
-message.channel.send("index 0");  
- console.log("index 0");
     if(rpsh=="r"||rpsh=="p"||rpsh=="s") 
     
     {
-     console.log("value r/p/s");
-message.channel.send("value r|p|s");     
+   
     rpsb=Math.floor(Math.random() * 3);     
 if (rpsh=="r") rpsh=0; if (rpsh=="p") rpsh=1; if (rpsh=="s") rpsh=2;
     if (rpsb=="0") rpsb=0; if(rpsb=="1") rpsb=1; if(rpsb=="2") rpsb=2;
      if (rpsh==rpsb)
       
      {
-      if (rpsh==0) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::fist::fist::sunglasses::volcano:");}
-      if (rpsh==1) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::hand_splayed::hand_splayed::sunglasses::volcano:");}              
-      if (rpsh==2) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::v::v::sunglasses::volcano:");}
+      if (rpsh==0) {message.channel.send("*(DING DING DING)*\n> :volcano::sunglasses::fist::fist::robot::volcano:");}
+      if (rpsh==1) {message.channel.send("*(DING DING DING)*\n> :volcano::sunglasses::hand_splayed::hand_splayed::robot::volcano:");}              
+      if (rpsh==2) {message.channel.send("*(DING DING DING)*\n> :volcano::sunglasses::v::v::robot::volcano:");}
      }
      else
       
      {
-      if(rpsh==0&&rpsb==1) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::fist::hand_splayed::sunglasses::volcano:");}
-      if(rpsh==0&&rpsb==2) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::fist::v::sunglasses::volcano:");}
+      if(rpsh==0&&rpsb==1) {message.channel.send("*(DING DING DING)*\n> :volcano::sunglasses::fist::hand_splayed::robot::volcano:");}
+      if(rpsh==0&&rpsb==2) {message.channel.send("*(DING DING DING)*\n> :volcano::sunglasses::fist::v::robot::volcano:");}
       
-      if(rpsh==1&&rpsb==0) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::hand_splayed::fist::sunglasses::volcano:");}
-      if(rpsh==1&&rpsb==2) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::hand_splayed::v::sunglasses::volcano:");} 
+      if(rpsh==1&&rpsb==0) {message.channel.send("*(DING DING DING)*\n> :volcano::sunglasses::hand_splayed::fist::robot::volcano:");}
+      if(rpsh==1&&rpsb==2) {message.channel.send("*(DING DING DING)*\n> :volcano::sunglasses::hand_splayed::v::robot::volcano:");} 
       
-      if(rpsh==2&&rpsb==0) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::v::fist::sunglasses::volcano:");}
-      if(rpsh==2&&rpsb==1) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::v::hand_splayed::sunglasses::volcano:");}
+      if(rpsh==2&&rpsb==0) {message.channel.send("*(DING DING DING)*\n> :volcano::sunglasses::v::fist::robot::volcano:");}
+      if(rpsh==2&&rpsb==1) {message.channel.send("*(DING DING DING)*\n> :volcano::sunglasses::v::hand_splayed::robot::volcano:");}
       }             
                     
-    } else {return;}
+    } else {return;} //if cmd not rps and args not 1
     
      
-   }else {return;}
+   }else {return;} //if cmd not rps or calc
     
  
  //////////// 
