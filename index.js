@@ -83,31 +83,31 @@ function isNumeric(num){
     console.log("success");
   rpsh=args[0];
     
-    if(rpsh!==="r"||"p"||"s") { return; } else
+    if(rpsh!=="r"||"p"||"s") { return; } else
     
     {
      
     rpsb=Math.floor(Math.random() * 3);     
-if (rpsh==="r") rpsh=0; if (rpsh==="p") rpsh=1; if (rpsh==="s") rpsh=2;
-    if (rpsb==="r") rpsb=0; if(rpsb==="p") rpsb=1; if(rpsb==="s") rpsb=2;
-     if (rpsh===rpsb)
+if (rpsh=="r") rpsh=0; if (rpsh=="p") rpsh=1; if (rpsh=="s") rpsh=2;
+    if (rpsb=="r") rpsb=0; if(rpsb=="p") rpsb=1; if(rpsb=="s") rpsb=2;
+     if (rpsh==rpsb)
       
      {
-      if (rpsh===0) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::fist::fist::sunglasses::volcano:");}
-      if (rpsh===1) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::hand_splayed::hand_splayed::sunglasses::volcano:");}              
-      if (rpsh===2) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::v::v::sunglasses::volcano:");}
+      if (rpsh==0) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::fist::fist::sunglasses::volcano:");}
+      if (rpsh==1) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::hand_splayed::hand_splayed::sunglasses::volcano:");}              
+      if (rpsh==2) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::v::v::sunglasses::volcano:");}
      }
      else
       
      {
-      if(rpsh===0&&rpsb===1) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::fist::hand_splayed::sunglasses::volcano:");}
-      if(rpsh===0&&rpsb===2) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::fist::v::sunglasses::volcano:");}
+      if(rpsh==0&&rpsb==1) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::fist::hand_splayed::sunglasses::volcano:");}
+      if(rpsh==0&&rpsb==2) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::fist::v::sunglasses::volcano:");}
       
-      if(rpsh===1&&rpsb===0) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::hand_splayed::fist::sunglasses::volcano:");}
-      if(rpsh===1&&rpsb===2) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::hand_splayed::v::sunglasses::volcano:");} 
+      if(rpsh==1&&rpsb==0) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::hand_splayed::fist::sunglasses::volcano:");}
+      if(rpsh==1&&rpsb==2) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::hand_splayed::v::sunglasses::volcano:");} 
       
-      if(rpsh===2&&rpsb===0) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::v::fist::sunglasses::volcano:");}
-      if(rpsh===2&&rpsb===1) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::v::hand_splayed::sunglasses::volcano:");}
+      if(rpsh==2&&rpsb==0) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::v::fist::sunglasses::volcano:");}
+      if(rpsh==2&&rpsb==1) {message.channel.send("*(DING DING DING)*\n> :volcano::robot::v::hand_splayed::sunglasses::volcano:");}
       }              
                     
     }
