@@ -51,6 +51,7 @@ message.channel.send("**Calculator:**\n`#calc [first number] [second number]`");
  
  //////////
  
+ var rpsh; var rpsb;
   var pref="#";	
    if (message.content.indexOf(pref) !== 0) return;
 const args = message.content.slice(pref.length).trim().split(/ +/g);
@@ -70,14 +71,7 @@ const args = message.content.slice(pref.length).trim().split(/ +/g);
  var n7=n1%n2;                         
 message.channel.send("Hmm lets see...\n> "+n1+"+"+n2+"="+n3+"\n> "+n1+"-"+n2+"="+n4+"\n> "+n1+"*"+n2+"="+n5+"\n> "+n1+"/"+n2+"="+n6+"\n> "+n1+"%"+n2+"="+n7);      
   }                }
-else {return;}
-
-///////////
- console.log(args);
- 
- var rpsh;var rpsb;
-    if (message.content.indexOf(pref) !== 0) return;
-   if (command==="rps"){
+else if (command==="rps"){
 
     console.log("success");
   rpsh=args[0];
