@@ -26,18 +26,18 @@ bot.channels.get("648490031815589888").send("𝗔𝗻𝗼𝗻𝘆𝗺𝗼𝘂�
   
 switch(command)
 {
-  case '+sssx':{ safemode=1; bot.channels.get("648490031815589888").send("**[Admin/Mod disabled the chat]**"); break; }
-  case '+ssso':{ bot.login(process.env.token); bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat]**"); 
+  case 'sssx':{ safemode=1; bot.channels.get("648490031815589888").send("**[Admin/Mod disabled the chat]**"); break; }
+  case 'ssso':{ bot.login(process.env.token); bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat]**"); 
                  safemode=0; }
-  case '+sssr':{ id=0; bot.channels.get("648490031815589888").send("**[Admin/Mod reset the ID]**");
+  case 'sssr':{ id=0; bot.channels.get("648490031815589888").send("**[Admin/Mod reset the ID]**");
                  bot.channels.get("674977831587020810").send("**[ID got reset]**"); }
-  case '+ssss':{ resetBot(); id=0; safemode=0; }
-  case '+sssm':{ safemode=1; 
+  case 'ssss':{ resetBot(); id=0; safemode=0; }
+  case 'sssm':{ safemode=1; 
                   bot.channels.get("648490031815589888").send("**[Admin/Mod disabled the chat; Bot under maintenance]**"); }
-  case '+sssmo':{ safemode=0; 
+  case 'sssmo':{ safemode=0; 
                   bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat; Maintenance over]**"); }  
-  case '#help':{ message.channel.send(":sunglasses:**invalid-user8910 v1.3 by invalid-user#8910**:sunglasses:\n\n**Calculator:**\n`#calc [first number] [second number]`\n**Rock paper scissors:**\n`#rps [r OR p OR s]`"); } 
-  case '#calc':{ if (args.length!==2) { return; }
+  case 'help':{ message.channel.send(":sunglasses:**invalid-user8910 v1.3 by invalid-user#8910**:sunglasses:\n\n**Calculator:**\n`#calc [first number] [second number]`\n**Rock paper scissors:**\n`#rps [r OR p OR s]`"); } 
+  case 'calc':{ if (args.length!==2) { return; }
                  var n1=parseInt(args[0],10); var n2=parseInt(args[1],10);
                  if (isNumeric(n1)==true && isNumeric(n2)==true)
                  { 
@@ -52,7 +52,7 @@ switch(command)
                  } 
                  else { return; }
                } 
-  case '#rps':{ if(args.length!==1) { return; }
+  case 'rps':{ if(args.length!==1) { return; }
                 rpsh=args[0];
                 if(rpsh=="r"||rpsh=="p"||rpsh=="s") 
                 {
