@@ -26,18 +26,24 @@ bot.channels.get("648490031815589888").send("𝗔𝗻𝗼𝗻𝘆𝗺𝗼𝘂�
   
 switch(command)
 {
-  case 'sssx':{ safemode=1; bot.channels.get("648490031815589888").send("**[Admin/Mod disabled the chat]**"); break; }
-  case 'ssso':{ bot.login(process.env.token); bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat]**"); 
-                 safemode=0; break; }
-  case 'sssr':{ id=0; bot.channels.get("648490031815589888").send("**[Admin/Mod reset the ID]**");
-                 bot.channels.get("674977831587020810").send("**[ID got reset]**"); break;}
-  case 'ssss':{ resetBot(); id=0; safemode=0; break; }
-  case 'sssm':{ safemode=1; 
-                 bot.channels.get("648490031815589888").send("**[Admin/Mod disabled the chat; Bot under maintenance]**"); 
-                 break; }
-  case 'sssmo':{ safemode=0; 
+  case 'sssx':{ if (message.member.roles.some(role=>role.name==='ADMIN'||'MODERATOR'))
+                {safemode=1; bot.channels.get("648490031815589888").send("**[Admin/Mod disabled the chat]**"); break;} else message.channel.send("fail");}
+  case 'ssso':{ if (message.member.roles.some(role=>role.name==='ADMIN'||'MODERATOR'))
+                {bot.login(process.env.token); bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat]**"); 
+                safemode=0; break;} }
+  case 'sssr':{ if (message.member.roles.some(role=>role.name==='ADMIN'))
+                {id=0; bot.channels.get("648490031815589888").send("**[Admin/Mod reset the ID]**");
+                bot.channels.get("674977831587020810").send("**[ID got reset]**"); break;} }
+  case 'ssss':{ if (message.member.roles.some(role=>role.name==='ADMIN'||'MODERATOR'))
+                {resetBot(); id=0; safemode=0; break;} }
+  case 'sssm':{ if (message.member.roles.some(role=>role.name==='ADMIN'))
+                {safemode=1; 
+                bot.channels.get("648490031815589888").send("**[Admin/Mod disabled the chat; Bot under maintenance]**"); 
+                 break;} }
+  case 'sssmo':{ if (message.member.roles.some(role=>role.name==='ADMIN'))
+                 {safemode=0; 
                  bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat; Maintenance over]**"); 
-                 break; }  
+                 break;} }  
   case 'help':{ message.channel.send(":sunglasses:**invalid-user8910 v1.3 by invalid-user#8910**:sunglasses:\n\n**Calculator:**\n`#calc [first number] [second number]`\n**Rock paper scissors:**\n`#rps [r OR p OR s]`"); break; } 
   case 'calc':{ if (args.length!==2) { return; }
                  var n1=parseInt(args[0],10); var n2=parseInt(args[1],10);
