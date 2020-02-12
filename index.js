@@ -2,7 +2,7 @@ const Discord=require('discord.js');
 const bot=new Discord.Client();
 var id=0;
 var safemode=0;
-const adminrole="ADMIN";
+const adminrole=message.guild.roles.find(r=>r.name==="ADMIN");
 const modrole="MODERATOR";
 
 bot.login(process.env.token);
