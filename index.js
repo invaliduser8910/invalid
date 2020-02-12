@@ -29,23 +29,23 @@ bot.channels.get("648490031815589888").send("𝗔𝗻𝗼𝗻𝘆𝗺𝗼𝘂�
 switch(command)
 {
   case 'sssx':{ if (message.member.roles.has(adminrole.id||modrole.id))
-                {safemode=1; bot.channels.get("648490031815589888").send("**[Admin/Mod disabled the chat]**"); break;} else message.channel.send("fail");}
+                {safemode=1; bot.channels.get("648490031815589888").send("**[Admin/Mod disabled the chat]**"); break;} else message.channel.send("Error: High rank command.");}
   case 'ssso':{ if (message.member.roles.has(adminrole.id||modrole.id))
                 {bot.login(process.env.token); bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat]**"); 
-                safemode=0; break;} }
+                safemode=0; break;} else message.channel.send("Error: High rank command."); }
   case 'sssr':{ if (message.member.roles.has(adminrole.id))
                 {id=0; bot.channels.get("648490031815589888").send("**[Admin/Mod reset the ID]**");
-                bot.channels.get("674977831587020810").send("**[ID got reset]**"); break;} }
+                bot.channels.get("674977831587020810").send("**[ID got reset]**"); break;} else message.channel.send("Error: High rank command."); }
   case 'ssss':{ if (message.member.roles.has(adminrole.id))
-                {resetBot(); id=0; safemode=0; break;} }
+                {resetBot(); id=0; safemode=0; break;} else message.channel.send("Error: High rank command."); }
   case 'sssm':{ if (message.member.roles.has(adminrole.id))
                 {safemode=1; 
                 bot.channels.get("648490031815589888").send("**[Admin/Mod disabled the chat; Bot under maintenance]**"); 
-                 break;} }
+                 break;} else message.channel.send("Error: High rank command."); }
   case 'sssmo':{ if (message.member.roles.has(adminrole.id))
                  {safemode=0; 
                  bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat; Maintenance over]**"); 
-                 break;} }  
+                 break;} else message.channel.send("Error: High rank command."); }  
   case 'help':{ message.channel.send(":sunglasses:**invalid-user8910 v1.3 by invalid-user#8910**:sunglasses:\n\n**Calculator:**\n`#calc [first number] [second number]`\n**Rock paper scissors:**\n`#rps [r OR p OR s]`"); break; } 
   case 'calc':{ if (args.length!==2) { return; }
                  var n1=parseInt(args[0],10); var n2=parseInt(args[1],10);
