@@ -28,21 +28,21 @@ bot.channels.get("648490031815589888").send("𝗔𝗻𝗼𝗻𝘆𝗺𝗼𝘂�
   
 switch(command)
 {
-  case 'sssx':{ if (message.member.roles.has(adminrole.id))
+  case 'sssx':{ if (message.member.roles.has(adminrole.id||modrole.id))
                 {safemode=1; bot.channels.get("648490031815589888").send("**[Admin/Mod disabled the chat]**"); break;} else message.channel.send("fail");}
-  case 'ssso':{ if (message.member.roles.some(role=>role.name==='ADMIN'||'MODERATOR'))
+  case 'ssso':{ if (message.member.roles.has(adminrole.id||modrole.id))
                 {bot.login(process.env.token); bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat]**"); 
                 safemode=0; break;} }
-  case 'sssr':{ if (message.member.roles.some(role=>role.name==='ADMIN'))
+  case 'sssr':{ if (message.member.roles.has(adminrole.id))
                 {id=0; bot.channels.get("648490031815589888").send("**[Admin/Mod reset the ID]**");
                 bot.channels.get("674977831587020810").send("**[ID got reset]**"); break;} }
-  case 'ssss':{ if (message.member.roles.some(role=>role.name==='ADMIN'||'MODERATOR'))
+  case 'ssss':{ if (message.member.roles.has(adminrole.id))
                 {resetBot(); id=0; safemode=0; break;} }
-  case 'sssm':{ if (message.member.roles.some(role=>role.name==='ADMIN'))
+  case 'sssm':{ if (message.member.roles.has(adminrole.id))
                 {safemode=1; 
                 bot.channels.get("648490031815589888").send("**[Admin/Mod disabled the chat; Bot under maintenance]**"); 
                  break;} }
-  case 'sssmo':{ if (message.member.roles.some(role=>role.name==='ADMIN'))
+  case 'sssmo':{ if (message.member.roles.has(adminrole.id))
                  {safemode=0; 
                  bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat; Maintenance over]**"); 
                  break;} }  
