@@ -37,7 +37,7 @@ switch(command)
                 {id=0; bot.channels.get("648490031815589888").send("**[Admin/Mod reset the ID]**");
                 bot.channels.get("674977831587020810").send("**[ID got reset]**"); break;} else message.channel.send("Error: High rank command."); return; }
   case 'ssss':{ if (message.member.roles.has(adminrole.id))
-                {resetBot(); id=0; safemode=0; break;} else message.channel.send("Error: High rank command."); return; }
+                {resetBot(); id=0; safemode=0; break;} else message.channel.send("Error: High rank command."); break; }
   case 'sssm':{ if (message.member.roles.has(adminrole.id))
                 {safemode=1; 
                 bot.channels.get("648490031815589888").send("**[Admin/Mod disabled the chat; Bot under maintenance]**"); 
