@@ -2,7 +2,7 @@ const Discord=require('discord.js');
 const bot=new Discord.Client();
 var id=0;
 var safemode=0;
-const adminrole="<@&632823284735672332>";
+const adminrole="632823284735672332";
 const modrole="<@&637909220204871683>";
 
 bot.login(process.env.token);
