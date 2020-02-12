@@ -11,7 +11,8 @@ bot.user.setPresence({game:{name:"#help"},status:'online'});
 
 bot.on("message",function(message){
 
-
+const adminrole=message.guild.roles.find(r=>r.name==="ADMIN"); 
+const modrole=message.guild.roles.find(r=>r.name==="MODERATOR");   
 var rpsh; var rpsb; var pref="#";	
 if (message.content.indexOf(pref) !== 0) return;
 const args = message.content.slice(pref.length).trim().split(/ +/g);
@@ -27,8 +28,6 @@ bot.channels.get("648490031815589888").send("𝗔𝗻𝗼𝗻𝘆𝗺𝗼𝘂�
   
 switch(command)
 {
-  const adminrole=message.guild.roles.find(r=>r.name==="ADMIN"); 
-  const modrole=message.guild.roles.find(r=>r.name==="MODERATOR");   
   case 'sssx':{ console.log((message.member.roles.has(adminrole.id||modrole.id)));console.log(adminrole);console.log(modrole);
                 if (message.member.roles.has(adminrole.id||modrole.id))
                 {safemode=1; bot.channels.get("648490031815589888").send("**[Admin/Mod disabled the chat]**"); break;} else message.channel.send("Error: High rank command."); break; }
