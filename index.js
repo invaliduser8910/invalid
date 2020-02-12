@@ -2,8 +2,6 @@ const Discord=require('discord.js');
 const bot=new Discord.Client();
 var id=0;
 var safemode=0;
-const adminrole=message.guild.roles.find(r=>r.name==="ADMIN");
-const modrole="MODERATOR";
 
 bot.login(process.env.token);
 
@@ -12,7 +10,9 @@ bot.user.setPresence({game:{name:"#help"},status:'online'});
                             }); 
 
 bot.on("message",function(message){
-  
+
+const adminrole=message.guild.roles.find(r=>r.name==="ADMIN");
+const modrole="MODERATOR";
 var rpsh; var rpsb; var pref="#";	
 if (message.content.indexOf(pref) !== 0) return;
 const args = message.content.slice(pref.length).trim().split(/ +/g);
