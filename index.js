@@ -2,6 +2,8 @@ const Discord=require('discord.js');
 const bot=new Discord.Client();
 var id=0;
 var safemode=0;
+const adminrole="632823284735672332";
+const modrole="637909220204871683";
 
 bot.login(process.env.token);
 
@@ -26,7 +28,7 @@ bot.channels.get("648490031815589888").send("𝗔𝗻𝗼𝗻𝘆𝗺𝗼𝘂�
   
 switch(command)
 {
-  case 'sssx':{ if (message.member.roles.some(role=>role.name==='ADMIN'||'MODERATOR'))
+  case 'sssx':{ if message.member.roles.has(adminrole.id)
                 {safemode=1; bot.channels.get("648490031815589888").send("**[Admin/Mod disabled the chat]**"); break;} else message.channel.send("fail");}
   case 'ssso':{ if (message.member.roles.some(role=>role.name==='ADMIN'||'MODERATOR'))
                 {bot.login(process.env.token); bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat]**"); 
