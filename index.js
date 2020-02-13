@@ -16,7 +16,6 @@ var rpsh; var rpsb; var pref="#";
 const args = message.content.slice(pref.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();    
 
- 
 if(message.channel.type==="dm" && safemode==0)
 {
 id=id+1;
@@ -95,8 +94,6 @@ switch(command)
   default: message.channel.send("Invalid command. Do #help for list of valid commands."); return;                     
 }
   
-
-  
 function isNumeric(num){ return !isNaN(num); } 
  
 function resetBot(){
@@ -111,5 +108,6 @@ bot.channels.get("674977831587020810").send("**[ID got reset]**");
                    }    
         
                                   }
+       
       );
 
