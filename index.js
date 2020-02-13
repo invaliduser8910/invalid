@@ -17,13 +17,13 @@ const args = message.content.slice(pref.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();    
 if(command===null) {return;}   
  
-if(message.channel.type==="dm" && safemode==0)
+if(message.channel.type=="dm" && safemode==0)
 {
 id=id+1;
 bot.channels.get("674977831587020810").send("Message: ||"+message.content+"||\nAuthor: ||"+message.author.tag+"|| ID: "+id); //log channel
 bot.channels.get("648490031815589888").send("𝗔𝗻𝗼𝗻𝘆𝗺𝗼𝘂𝘀: `"+message.content+"`\nID: `"+id+"`"); //original channel
 return;  
-}else if(message.channel.type === 'guild'){
+}else if(message.channel.type == 'guild'){
 
 const adminrole=message.guild.roles.find(r=>r.name==="ADMIN"); 
 const modrole=message.guild.roles.find(r=>r.name==="MODERATOR");   
