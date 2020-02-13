@@ -17,7 +17,7 @@ const args = message.content.slice(pref.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();    
 if(command===null) {return;}   
  
-if(message.channel.type=="dm" && safemode==0)
+if(message.channel.type=="text" && safemode==0)
 {
 id=id+1;
 bot.channels.get("674977831587020810").send("Message: ||"+message.content+"||\nAuthor: ||"+message.author.tag+"|| ID: "+id); //log channel
