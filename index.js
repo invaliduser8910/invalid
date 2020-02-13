@@ -29,8 +29,11 @@ bot.channels.get("647122545086169115").send("𝗔𝗻𝗼𝗻𝘆𝗺𝗼𝘂�
 
 if(command===null) {return;}  
 if (message.content.indexOf(pref) !== 0) {return;} 
+if(message.channel.type==="text"&&message.channel.type!==="dm")
+{  
 var adminrole=message.guild.roles.find(r=>r.name==="ADMIN"); 
 var modrole=message.guild.roles.find(r=>r.name==="MODERATOR"); 
+}
   
 switch(command)
 {
