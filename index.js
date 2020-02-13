@@ -24,10 +24,11 @@ bot.channels.get("674977831587020810").send("Message: ||"+message.content+"||\nA
 bot.channels.get("648490031815589888").send("𝗔𝗻𝗼𝗻𝘆𝗺𝗼𝘂𝘀: `"+message.content+"`\nID: `"+id+"`"); //original channel 
 }
 
+if(command===null) {return;}  
+if (message.content.indexOf(pref) !== 0) {return;} 
 const adminrole=message.guild.roles.find(r=>r.name==="ADMIN"); 
 const modrole=message.guild.roles.find(r=>r.name==="MODERATOR"); 
-if(command===null) {return;}  
-if (message.content.indexOf(pref) !== 0) {return;}   
+  
 switch(command)
 {
   case 'sssx':{ if (message.member.roles.has(adminrole.id)||message.member.roles.has(modrole.id))
