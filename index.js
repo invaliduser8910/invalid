@@ -22,6 +22,7 @@ if(message.channel.type==="dm" && safemode==0)
 id=id+1;
 bot.channels.get("674977831587020810").send("Message: ||"+message.content+"||\nAuthor: ||"+message.author.tag+"|| ID: "+id); //log channel
 bot.channels.get("648490031815589888").send("𝗔𝗻𝗼𝗻𝘆𝗺𝗼𝘂𝘀: `"+message.content+"`\nID: `"+id+"`"); //original channel
+return;  
 }else{(console.log(message.channel.type));
 
 const adminrole=message.guild.roles.find(r=>r.name==="ADMIN"); 
@@ -89,7 +90,7 @@ switch(command)
                 else {return;} //if arguments are invalid 
                 break;
               }
-  //default: message.channel.send("Invalid command. Do #help for list of valid commands."); return;                     
+  default: message.channel.send("Invalid command. Do #help for list of valid commands."); return;                     
 }
   
      } //
