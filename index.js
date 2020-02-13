@@ -28,14 +28,12 @@ bot.channels.get("648490031815589888").send("𝗔𝗻𝗼𝗻𝘆𝗺𝗼𝘂�
   
 switch(command)
 {
-  case 'sssx':{ console.log((message.member.roles.has(adminrole.id||modrole.id)));console.log(adminrole);console.log(modrole);
-                if (message.member.roles.has(adminrole.id||modrole.id))
+  case 'sssx':{ if (message.member.roles.has(adminrole.id)||message.member.roles.has(modrole.id))
                 {safemode=1; bot.channels.get("648490031815589888").send("**[Admin/Mod disabled the chat]**"); break;} else message.channel.send("Error: High rank command."); break; }
-  case 'ssso':{ console.log((message.member.roles.has(adminrole.id||modrole.id)));console.log(adminrole);console.log(modrole);
-                if (message.member.roles.has(adminrole.id||modrole.id))
+  case 'ssso':{ if (message.member.roles.has(adminrole.id)||message.member.roles.has(modrole.id))
                 {bot.login(process.env.token); bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat]**"); 
                 safemode=0; break;} else message.channel.send("Error: High rank command."); break; }
-  case 'sssr':{ if (message.member.roles.has(adminrole.id))
+  case 'sssr':{ if (message.member.roles.has(adminrole.id)||message.member.roles.has(modrole.id))
                 {id=0; bot.channels.get("648490031815589888").send("**[Admin/Mod reset the ID]**");
                 bot.channels.get("674977831587020810").send("**[ID got reset]**"); break;} else message.channel.send("Error: High rank command."); break; }
   case 'ssss':{ if (message.member.roles.has(adminrole.id))
