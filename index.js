@@ -89,7 +89,7 @@ switch(command)
                 if(rpsh==2&&rpsb==1) {message.channel.send("*(DING DING DING)*\n> :volcano::sunglasses::v::hand_splayed::robot::volcano:");}
                 }             
                 }
-                else {return;} //if arguments are invalid 
+                else {message.channel.send("Lol gang signs not allowed"; return;} //if arguments are invalid 
                 break;
               }
   default: message.channel.send("Invalid command. Do #help for list of valid commands."); return;                     
