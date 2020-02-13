@@ -33,7 +33,7 @@ switch(command)
                 {safemode=1; bot.channels.get("648490031815589888").send("**[Admin/Mod disabled the chat]**"); message.channel.send("Done!"); break;} else message.channel.send("Error: High rank command."); break; }
   case 'ssso':{ if (message.member.roles.has(adminrole.id)||message.member.roles.has(modrole.id))
                 {bot.login(process.env.token); bot.channels.get("648490031815589888").send("**[Admin/Mod enabled the chat]**"); 
-                safemode=0; message.channel.send("Done!"); break;} else message.channel.send("Error: High rank command."); break; }
+                safemode=0; message.channel.send("Done!"); break; return;} else message.channel.send("Error: High rank command."); break; }
   case 'sssr':{ if (message.member.roles.has(adminrole.id))
                 {id=0; bot.channels.get("648490031815589888").send("**[Admin/Mod reset the ID]**");
                 bot.channels.get("674977831587020810").send("**[ID got reset]**"); message.channel.send("Done!"); break;} else message.channel.send("Error: High rank command."); break; }
