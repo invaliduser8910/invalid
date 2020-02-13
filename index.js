@@ -90,7 +90,7 @@ switch(command)
                 else {return;} //if arguments are invalid 
                 break;
               }
-  //default: message.channel.send("Invalid command. Do #help for list of valid commands."); break;                     
+  default: message.channel.send("Invalid command. Do #help for list of valid commands."); break;                     
 }
   
 }
