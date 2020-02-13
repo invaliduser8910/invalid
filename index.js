@@ -29,8 +29,8 @@ bot.channels.get("647122545086169115").send("𝗔𝗻𝗼𝗻𝘆𝗺𝗼𝘂�
 
 if(command===null) {return;}  
 if (message.content.indexOf(pref) !== 0) {return;} 
-const adminrole=message.guild.roles.find(r=>r.name==="ADMIN"); 
-const modrole=message.guild.roles.find(r=>r.name==="MODERATOR"); 
+//const adminrole=message.guild.roles.find(r=>r.name==="ADMIN"); 
+//const modrole=message.guild.roles.find(r=>r.name==="MODERATOR"); 
   
 switch(command)
 {
