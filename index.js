@@ -11,6 +11,8 @@ bot.user.setPresence({game:{name:"#help"},status:'online'});
 
 bot.on("message",function(message){
 
+const adminrole=message.guild.roles.find(r=>r.name==="ADMIN"); 
+const modrole=message.guild.roles.find(r=>r.name==="MODERATOR");   
 var rpsh; var rpsb; var pref="#";	
 if (message.content.indexOf(pref) !== 0) return;
 const args = message.content.slice(pref.length).trim().split(/ +/g);
@@ -22,14 +24,9 @@ if(message.channel.type==="dm" && safemode==0)
 id=id+1;
 bot.channels.get("674977831587020810").send("Message: ||"+message.content+"||\nAuthor: ||"+message.author.tag+"|| ID: "+id); //logs channel
 bot.channels.get("648490031815589888").send("𝗔𝗻𝗼𝗻𝘆𝗺𝗼𝘂𝘀: `"+message.content+"`\nID: `"+id+"`");
+return;  
 }
-  
-else if(message.channel.type!=="dm"||safemode!==0)
-{
-  
-const adminrole=message.guild.roles.find(r=>r.name==="ADMIN"); 
-const modrole=message.guild.roles.find(r=>r.name==="MODERATOR");   
-
+   
 switch(command)
 {
   case 'sssx':{ if (message.member.roles.has(adminrole.id)||message.member.roles.has(modrole.id))
@@ -95,9 +92,7 @@ switch(command)
               }
   default: message.channel.send("Invalid command. Do #help for list of valid commands."); break;                     
 }
-
-}  
-
+  
 function isNumeric(num){ return !isNaN(num); } 
  
 function resetBot(){
