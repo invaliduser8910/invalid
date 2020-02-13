@@ -23,8 +23,8 @@ if(message.channel.type==="dm" && safemode==0)
 id=id+1;
 if(command==="link"&&args.length==1)
 {var a=args[0]; const attachment=new Attachment(a); bot.channels.get("647122545086169115").send(a);}
-bot.channels.get("674977831587020810").send("Message: ||"+message.content+"||\nAuthor: ||"+message.author.tag+"|| ID: "+id); //log channel
-bot.channels.get("648490031815589888").send("𝗔𝗻𝗼𝗻𝘆𝗺𝗼𝘂𝘀: `"+message.content+"`\nID: `"+id+"`"); //original channel 
+bot.channels.get("647122545086169115").send("Message: ||"+message.content+"||\nAuthor: ||"+message.author.tag+"|| ID: "+id); //log channel 674977831587020810
+bot.channels.get("647122545086169115").send("𝗔𝗻𝗼𝗻𝘆𝗺𝗼𝘂𝘀: `"+message.content+"`\nID: `"+id+"`"); //original channel 648490031815589888
 }
 
 if(command===null) {return;}  
