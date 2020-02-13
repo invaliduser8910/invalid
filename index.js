@@ -12,10 +12,10 @@ bot.user.setPresence({game:{name:"#help"},status:'online'});
 bot.on("message",function(message){
   
 var rpsh; var rpsb; var pref="#";	
-if (message.content.indexOf(pref) !== 0) {return;} 
+//if (message.content.indexOf(pref) !== 0) {return;} 
 const args = message.content.slice(pref.length).trim().split(/ +/g);
 const command = args.shift().toLowerCase();    
-if(command===null) {return;}   
+//if(command===null) {return;}   
  
 if(message.channel.type==="dm" && safemode==0)
 {
