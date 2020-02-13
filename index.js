@@ -23,8 +23,7 @@ id=id+1;
 bot.channels.get("674977831587020810").send("Message: ||"+message.content+"||\nAuthor: ||"+message.author.tag+"|| ID: "+id); //logs channel
 bot.channels.get("648490031815589888").send("𝗔𝗻𝗼𝗻𝘆𝗺𝗼𝘂𝘀: `"+message.content+"`\nID: `"+id+"`");
 }
-else
-{  
+  
   
 const adminrole=message.guild.roles.find(r=>r.name==="ADMIN"); 
 const modrole=message.guild.roles.find(r=>r.name==="MODERATOR");   
@@ -95,7 +94,6 @@ switch(command)
   default: message.channel.send("Invalid command. Do #help for list of valid commands."); break;                     
 }
   
-}  
 
 function isNumeric(num){ return !isNaN(num); } 
  
