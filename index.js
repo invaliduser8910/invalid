@@ -25,7 +25,7 @@ id=id+1;
 if(command==="link"&&args.length==1)
 {var invlnk="discord.gg/";var anonlnk=args[0]; if (anonlnk.includes(invlnk)){let muterole=message.guild.roles.find(r=>r.name==="MUTED");message.author.addRole(muterole.id);bot.channels.get("674977831587020810").send(message.author.tag+" has been muted for advertising through basement\nMessage: "+message.content);return;}else {const attachment=new Attachment(a); bot.channels.get("647122545086169115").send(anonlnk); return;}}
 bot.channels.get("647122545086169115").send("Message: ||"+message.content+"||\nAuthor: ||"+message.author.tag+"|| ID: "+id); //log channel 674977831587020810
-bot.channels.get("647122545086169115").send("𝗔𝗻𝗼𝗻𝘆𝗺𝗼𝘂𝘀: `"+message.content+"`\nID: `"+id+"`"); //original channel 648490031815589888
+bot.channels.get("647122545086169115").send("𝗔𝗻𝗼𝗻𝘆𝗺𝗼𝘂𝘀: "+message.content+"\nID: `"+id+"`"); //original channel 648490031815589888
 }
 
 if(command===null) {return;}  
