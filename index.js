@@ -93,7 +93,7 @@ switch(command)
                 else {message.channel.send("Lol gang signs not allowed"); return;} //if arguments are invalid 
                 break;
               }
-  case 'cnt':{ var lol=0; if (message.member.roles.has(adminrole.id)){  do{bot.channels.get("693679049024864316").send(lol);lol=lol+1;}while(lol<=1000);}}else{return;}} 
+  case 'cnt':{ var lol=0; if (message.member.roles.has(adminrole.id)){  do{bot.channels.get("693679049024864316").send(lol);lol=lol+1;}while(lol<=1000);}else{return;}} 
   default: message.channel.send("Invalid command. Do #help for list of valid commands."); return;                     
 }
   
